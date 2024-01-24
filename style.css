@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111827;
+}
+
+div {
+  background-color: #f9fafb;
+  box-shadow: 20px 20px 60px #00000041, inset -20px -20px 60px #ffffff40;
+  position: absolute;
+  border-radius: 20px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 50%;
+  text-align: center;
+  background-color: #fff;
+}
+
+h1 {
+  color: #111827;
+}
+
+#firstOperand {
+  padding: 10px 26px;
+  margin: 20px;
+  background-color: #f9fafb;
+  border: 2px solid #111827;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#secondOperand {
+  padding: 10px 26px;
+  background-color: #f9fafb;
+  border: 2px solid #111827;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+#result {
+  padding: 10px 26px;
+  background-color: #f9fafb;
+  border: 2px solid #111827;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button {
+  padding: 10px 26px;
+  background-color: #f9fafb;
+  border: 2px solid #111827;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  z-index: 1;
+  color: #f9fafb;
+  margin: 30px 5px;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #111827;
+  border-radius: inherit;
+  translate: 6px 6px;
+  transition: 0.25s;
+  z-index: -1;
+}
+
+button:hover::after {
+  translate: 0;
+}
+
+button:hover {
+  background-color: #111827;
+  color: #f9fafb;
+}
